@@ -1,0 +1,21 @@
+{
+  "name": "termin8",
+  "version": "1.0.0",
+  "description": "Backend for Apps wishing to provide a Calendar App to arrange meetings between individuals",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderwurst/termin8.git"
+  },
+  "keywords": [],
+  "author": "coderwurst (andrew mcmechan)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderwurst/termin8/issues"
+  },
+  "homepage": "https://github.com/coderwurst/termin8#readme"
+}

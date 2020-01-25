@@ -1,0 +1,9 @@
+// signup
+// :id
+// login
+// logout
+// forgotPassword
+// resetPassword
+// updatePassword
+// deleteAccount
+// myAccount
