@@ -2,3 +2,4 @@
 // availableDates
 // bookedDates
 // freeSlots
+// owner - user
