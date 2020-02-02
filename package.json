@@ -4,12 +4,26 @@
   "description": "Backend for Apps wishing to provide a Calendar App to arrange meetings between individuals",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coderwurst/termin8.git"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      ".git",
+      "node_modules/**/node_modules"
+    ],
+    "delay": "3",
+    "verbose": true,
+    "autoAttachChildProcesses": true,
+    "execMap": {
+      "js": "node --harmony"
+    },
+    "ext": "js,json"
   },
   "keywords": [],
   "author": "coderwurst (andrew mcmechan)",
@@ -17,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/coderwurst/termin8/issues"
   },
-  "homepage": "https://github.com/coderwurst/termin8#readme"
+  "homepage": "https://github.com/coderwurst/termin8#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
 }
