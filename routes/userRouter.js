@@ -1,3 +1,6 @@
+const express = require('express');
+const router = express.Router();
+
 // signup
 // :id
 // login
@@ -7,3 +10,5 @@
 // updatePassword
 // deleteAccount
 // myAccount
+
+module.exports = router;

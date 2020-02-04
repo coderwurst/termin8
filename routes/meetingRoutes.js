@@ -1,4 +1,0 @@
-// createMeeting
-// readMeetings
-// updateMeeting
-// deleteMeeting
