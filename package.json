@@ -4,8 +4,8 @@
   "description": "Backend for Apps wishing to provide a Calendar App to arrange meetings between individuals",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -33,7 +33,11 @@
   },
   "homepage": "https://github.com/coderwurst/termin8#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.2"
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "jest": "^25.1.0",
+    "supertest": "^4.0.2"
   }
 }
