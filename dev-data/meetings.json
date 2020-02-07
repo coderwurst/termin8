@@ -1,0 +1,20 @@
+[
+  {
+    "organiser": "5c88fa8cf4afda39709c2959",
+    "participants": ["5c88fa8cf4afda39709c2960", "5c88fa8cf4afda39709c2962"],
+    "location": "@home",
+    "time": "2021-06-19T09:00:00.000Z"
+  },
+  {
+    "organiser": "5c88fa8cf4afda39709c2961",
+    "participants": ["5c88fa8cf4afda39709c2963", "5c88fa8cf4afda39709c2964"],
+    "location": "@home",
+    "time": "2021-06-19T09:00:00.000Z"
+  },
+  {
+    "organiser": "5c88fa8cf4afda39709c2965",
+    "participants": ["5c88fa8cf4afda39709c2966", "5c88fa8cf4afda39709c2967"],
+    "location": "@home",
+    "time": "2021-06-19T09:00:00.000Z"
+  }
+]
