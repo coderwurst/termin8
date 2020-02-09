@@ -23,6 +23,10 @@ const meetingSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now()
+  },
+  confirmed: {
+    type: Boolean,
+    default: false
   }
 });
 
