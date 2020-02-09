@@ -2,6 +2,7 @@ const fs = require('fs');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const Meeting = require('../models/meetingModel');
+const User = require('../models/userModel');
 
 dotenv.config({ path: './config.env' });
 
@@ -23,10 +24,13 @@ const meetings = JSON.parse(
   fs.readFileSync(`${__dirname}/meetings.json`, 'utf8')
 );
 
+const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf8'));
+
 // import to DB
 const importData = async () => {
   try {
     await Meeting.create(meetings);
+    await User.create(users);
     console.log('data successfully loaded');
   } catch (error) {
     console.log(error);
@@ -38,6 +42,7 @@ const importData = async () => {
 const deleteData = async () => {
   try {
     await Meeting.deleteMany();
+    await User.deleteMany();
     console.log('data successfully deleted');
   } catch (error) {
     console.log(error);
