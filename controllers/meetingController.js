@@ -9,6 +9,7 @@ exports.createMeeting = (request, response, next) => {
   response.status(201).send('NOT IMPLEMENTED: create a Meeting');
   next();
 };
+
 exports.getMeetingsList = (request, response, next) => {
   response
     .status(200)
