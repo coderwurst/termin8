@@ -21,7 +21,7 @@ npm run start
 ### initial ideas
 
 - to provide a platform for small businesses and indivuals to arrange formal appointments and casual get-togethers over the web
-- the backend should provide a service that can be used by multiple frontends to store and administer shared calenders via a mongoDB  
+- the backend should provide a service that can be used by multiple frontends to store and administer shared calendars via a mongoDB  
   Some Examples:
 - Local Hairdressers who want to provide the option of booking appointments even when they are closed
 - Individuals who wish to start a meetup at a particular location with 1 or many others

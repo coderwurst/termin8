@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const calenderSchema = new mongoose.Schema({
+const calendarSchema = new mongoose.Schema({
   owner: {
     type: mongoose.Schema.ObjectId,
     ref: 'User',
@@ -14,6 +14,6 @@ const calenderSchema = new mongoose.Schema({
   ]
 });
 
-const Calender = new mongoose.model('Calender', calenderSchema);
+const Calendar = new mongoose.model('Calendar', calendarSchema);
 
-module.exports = Calender;
+module.exports = Calendar;

@@ -1,5 +1,5 @@
 const express = require('express');
-const calenderRouter = require('./routes/calenderRouter');
+const calendarRouter = require('./routes/calendarRouter');
 const meetingRouter = require('./routes/meetingRouter');
 const userRouter = require('./routes/userRouter');
 
@@ -18,6 +18,6 @@ app.use(function(req, res, next) {
 
 app.use(`${baseAPI}/user`, userRouter);
 app.use(`${baseAPI}/meeting`, meetingRouter);
-app.use(`${baseAPI}/calender`, calenderRouter);
+app.use(`${baseAPI}/calendar`, calendarRouter);
 
 module.exports = app;

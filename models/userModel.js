@@ -56,9 +56,9 @@ const userSchema = new mongoose.Schema({
     default: true,
     select: false
   },
-  calender: {
+  calendar: {
     type: mongoose.Schema.ObjectId,
-    ref: 'Calender'
+    ref: 'Calendar'
   }
 });
 const User = new mongoose.model('User', userSchema);

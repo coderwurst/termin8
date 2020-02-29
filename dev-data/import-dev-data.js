@@ -1,7 +1,7 @@
 const fs = require('fs');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const Calender = require('../models/calenderModel');
+const Calendar = require('../models/calendarModel');
 const Meeting = require('../models/meetingModel');
 const User = require('../models/userModel');
 
@@ -27,8 +27,8 @@ const meetings = JSON.parse(
 
 const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`, 'utf8'));
 
-const calenders = JSON.parse(
-  fs.readFileSync(`${__dirname}/calenders.json`, 'utf8')
+const calendars = JSON.parse(
+  fs.readFileSync(`${__dirname}/calendars.json`, 'utf8')
 );
 
 // import to DB
@@ -36,7 +36,7 @@ const importData = async () => {
   try {
     await Meeting.create(meetings);
     await User.create(users);
-    await Calender.create(calenders);
+    await Calendar.create(calendars);
     console.log('data successfully loaded');
   } catch (error) {
     console.log(error);
@@ -49,7 +49,7 @@ const deleteData = async () => {
   try {
     await Meeting.deleteMany();
     await User.deleteMany();
-    await Calender.deleteMany();
+    await Calendar.deleteMany();
     console.log('data successfully deleted');
   } catch (error) {
     console.log(error);
