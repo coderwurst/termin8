@@ -1,12 +1,18 @@
-// const Meeting = require('../models/meetingModel');
+const Model = require('../models/meetingModel');
 
 exports.log = (request, response, next) => {
   console.log(`LOG: call from ${request.hostname} to meetingController`);
   next();
 };
 
-exports.createMeeting = (request, response, next) => {
-  response.status(201).send('NOT IMPLEMENTED: create a Meeting');
+exports.createMeeting = async (request, response, next) => {
+  const doc = await Model.create(request.body);
+  response.status(201).json({
+    status: 'create success',
+    data: {
+      data: doc
+    }
+  });
   next();
 };
 

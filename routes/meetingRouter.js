@@ -4,6 +4,7 @@ const router = express.Router();
 const meetingController = require('../controllers/meetingController');
 
 router.post('/', meetingController.log, meetingController.createMeeting);
+
 router.get(
   '/list/:id',
   meetingController.log,

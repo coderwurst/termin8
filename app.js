@@ -4,6 +4,7 @@ const meetingRouter = require('./routes/meetingRouter');
 const userRouter = require('./routes/userRouter');
 
 const app = express();
+
 const baseAPI = '/api';
 
 // TODO: allow cors for local development to be revisited before deployment
@@ -15,6 +16,9 @@ app.use(function(req, res, next) {
   );
   next();
 });
+
+// body parser - reading data from body into request.body to 10KB
+app.use(express.json({ limit: '10kb' }));
 
 app.use(`${baseAPI}/user`, userRouter);
 app.use(`${baseAPI}/meeting`, meetingRouter);

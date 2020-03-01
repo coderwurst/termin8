@@ -1,28 +1,31 @@
 const mongoose = require('mongoose');
+const moment = require('moment');
 
 const meetingSchema = new mongoose.Schema({
   organiser: {
-    type: mongoose.Schema.ObjectId,
+    type: String, // mongoose.Schema.ObjectId,
     ref: 'User',
     required: [true, 'a meeting must have an organiser']
   },
-  participants: [
-    {
-      type: mongoose.Schema.ObjectId,
-      ref: 'User'
-    }
-  ],
+  participants: [String],
   location: {
     type: String,
     required: [true, 'meeting must have a location']
   },
-  time: {
+  date: {
     type: Date,
     required: [true, 'meeting must specify a time']
   },
+  duration: {
+    type: String,
+    enum: {
+      values: ['15', '30', '45', '60'],
+      message: 'the duration can be on 15min intervals, up to 1 hour'
+    }
+  },
   createdAt: {
     type: Date,
-    default: Date.now()
+    default: moment()
   },
   confirmed: {
     type: Boolean,
