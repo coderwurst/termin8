@@ -1,7 +1,7 @@
 const express = require('express');
+const userRouter = require('./routes/userRouter');
 const calendarRouter = require('./routes/calendarRouter');
 const meetingRouter = require('./routes/meetingRouter');
-const userRouter = require('./routes/userRouter');
 
 const app = express();
 
