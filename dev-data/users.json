@@ -1,9 +1,11 @@
 [
   {
+    "_id": "5e5aba6a753c6c1001c82718",
     "name": "testUser1",
     "email": "testUser1@mail.com",
     "password": "test1234",
-    "passwordConfirm": "test1234"
+    "passwordConfirm": "test1234",
+    "calendar": "5e5aba6a753c6c1001c82719"
   },
   {
     "name": "testUser2",
