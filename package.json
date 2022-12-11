@@ -34,7 +34,7 @@
   "homepage": "https://github.com/coderwurst/termin8#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "moment": "^2.24.0",
     "mongoose": "^5.8.11"
   },
